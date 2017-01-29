@@ -7,12 +7,10 @@ def mutation?(base_word, mutation)
 	letters = mutation.split("")
 	base = base_word.split("")
 
-	letters.each do |l|
-		if l # Belongs to base (Find this method)
-			true
-		else
-			false
-		end
+	if letters.all?{|letters| base.include?(letters)}
+		true
+	else
+		false
 	end
 
 end

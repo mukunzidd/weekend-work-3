@@ -4,6 +4,7 @@
 
 def sum_of_range(array)
 	sum_of_range = 0
+	array = array.sort
 	range = array[0]..array[1]
 	range.each do |n|
 		sum_of_range = sum_of_range + n

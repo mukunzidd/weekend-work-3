@@ -56,10 +56,46 @@ else
 end
 
 # Add a fridge
+puts "Testing adding a fridge"
 
+result = reservation.add_a_fridge
 
+puts "Your method returned:"
+puts result
 
+if reservation.amenities.include?("fridge")
+  puts "PASS!"
+else
+  puts "Foul"
+end
 
+# Add a crib
+puts "Testing adding a crib"
+
+result = reservation.add_a_crib
+
+puts "Your method returned:"
+puts result
+
+if reservation.amenities.include?("crib")
+  puts "PASS!"
+else
+  puts "Foul"
+end
+
+# Add a fridge
+puts "Testing adding a fridge"
+
+result = reservation.add_a_fridge
+
+puts "Your method returned:"
+puts result
+
+if reservation.amenities.include?("fridge")
+  puts "PASS!"
+else
+  puts "Foul"
+end
 
 
 

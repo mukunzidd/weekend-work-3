@@ -3,7 +3,12 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+	sum_of_range = 0
+	range = array[0]..array[1]
+	range.each do |n|
+		sum_of_range = sum_of_range + n
+	end
+	sum_of_range
 end
 
 # Driver code - don't touch anything below this line.

@@ -32,3 +32,36 @@ end
 # The add_a_crib method
 # The add_a_custom_amenity method
 
+# Driver Code for the above Class:
+reservation = HotelReservation.new({customer_name: 'Jill Doe', date: '2017/01/02', room_number: '021'})
+
+
+puts "Testing Hotel Reservation Class!"
+
+p reservation
+
+# Changing the room number
+puts "Testing Changing the Room Number..."
+
+@room_number = "012"
+
+result = @room_number
+
+puts "Your new room number is: #{result}"
+
+if result == "012"
+  puts "PASS!"
+else
+  puts "Foul!"
+end
+
+# Add a fridge
+
+
+
+
+
+
+
+
+
